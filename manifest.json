@@ -1,0 +1,17 @@
+{
+  "app": {
+    "launch": {
+      "local_path": "index.html"
+    }
+  },
+  "description": "Simple Counter App",
+  "icons": {
+    "128": "assets/icon128.png",
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png"
+  },
+  "manifest_version": 2,
+  "name": "Simple Counter",
+  "permissions": ["clipboardWrite"],
+  "version": "2.0"
+}

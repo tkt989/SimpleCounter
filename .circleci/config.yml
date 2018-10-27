@@ -18,4 +18,25 @@ jobs:
 
     steps:
       - checkout
-      - run: echo Hello
+      - run:
+          name: Clean
+          command: rm -rf dist
+      - run:
+          name: Install
+          command: yarn install
+      - run:
+          name: Build
+          command: yarn build
+      - run:
+          name: Deploy
+          pwd: ~/repo/dist/web
+          command: |
+            mkdir -p ~/.ssh
+            ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+            git init
+            git config --global user.email "tkt989+circleci@example.com"
+            git config --global user.name "tkt989+circleci"
+            git remote add origin https://tkt989:${GH_TOKEN}@github.com/tkt989/SimpleCounter.git
+            git add .
+            git commit -m "update `date +"%Y-%m-%d %H:%M:%S"` [ci skip]"
+            git push -f origin master:gh-pages

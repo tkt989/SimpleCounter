@@ -39,4 +39,4 @@ jobs:
             git remote add origin https://tkt989:${GH_TOKEN}@github.com/tkt989/SimpleCounter.git
             git add .
             git commit -m "update `date +"%Y-%m-%d %H:%M:%S"` [ci skip]"
-            git push -f origin master:gh-pages
+            git push -f --quiet origin master:gh-pages

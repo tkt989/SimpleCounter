@@ -68,6 +68,10 @@ ul {
   cursor: pointer;
 }
 
+#plus1, #minus1 {
+  width: 50px;
+}
+
 .button:hover {
   position: relative;
   top: 1px;

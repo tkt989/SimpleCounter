@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Tally Counter App">
+  <link rel="icon" type="image/png" href="assets/icon16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="assets/icon48.png" sizes="48x48">
+  <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <link href="index.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <script src="main.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117836141-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117836141-4');
+  </script>
+  <title>Simple Counter</title>
+</head>
+
+<body>
+  <div id="t">Simple Counter</div>
+  <div id="box">
+    <div id="counter">
+      <ul id="fourthDigits">
+        <li>0</li>
+        <li>9</li>
+        <li>8</li>
+        <li>7</li>
+        <li>6</li>
+        <li>5</li>
+        <li>4</li>
+        <li>3</li>
+        <li>2</li>
+        <li>1</li>
+        <li>0</li>
+        <li>9</li>
+      </ul>
+      <span class="separator"></span>
+      <ul id="thirdDigits">
+        <li>0</li>
+        <li>9</li>
+        <li>8</li>
+        <li>7</li>
+        <li>6</li>
+        <li>5</li>
+        <li>4</li>
+        <li>3</li>
+        <li>2</li>
+        <li>1</li>
+        <li>0</li>
+        <li>9</li>
+      </ul>
+      <span class="separator"></span>
+      <ul id="secondDigits">
+        <li>0</li>
+        <li>9</li>
+        <li>8</li>
+        <li>7</li>
+        <li>6</li>
+        <li>5</li>
+        <li>4</li>
+        <li>3</li>
+        <li>2</li>
+        <li>1</li>
+        <li>0</li>
+        <li>9</li>
+      </ul>
+      <span class="separator"></span>
+      <ul id="firstDigits">
+        <li>0</li>
+        <li>9</li>
+        <li>8</li>
+        <li>7</li>
+        <li>6</li>
+        <li>5</li>
+        <li>4</li>
+        <li>3</li>
+        <li>2</li>
+        <li>1</li>
+        <li>0</li>
+        <li>9</li>
+      </ul>
+    </div>
+    <div id="buttons">
+      <button id="plus1" class="button">+1</button>
+      <button id="minus1" class="button">-1</button>
+      <button id="reset" class="button">Reset</button>
+      <button id="copy" class="button">Copy</button>
+      <input type="text" id="clip" style="position: absolute; top: -100px;" />
+    </div>
+  </div>
+  <footer>
+    <div id="footer-buttons">
+      <i id="donate" class="fas fa-dollar-sign"></i>
+    </div>
+
+    <div id="footer-messages" style="display: none">
+      Bitcoin: 16qL3y5gCzZAMTzMjCiJDRewfCe7adzRM6
+    </div>
+  </footer>
+</body>
+</head>
